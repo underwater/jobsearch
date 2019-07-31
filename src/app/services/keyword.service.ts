@@ -8,7 +8,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class KeywordService {
 
-  allKeywords: Keyword[];
   apiUrl: 'http://localhost:3000/keywords';
 
   constructor(private httpClient: HttpClient) { }
@@ -24,6 +23,4 @@ export class KeywordService {
   public deleteKeyword(name: string): void {
 
   }
-
-
 }

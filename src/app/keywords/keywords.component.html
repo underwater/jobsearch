@@ -1,1 +1,18 @@
-<p>keywords works!</p>
+<h1>Keyword List</h1>
+
+
+
+  <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">keyword</th>
+          <th scope="col">variations</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let keyword of allKeywords">
+        <tr>
+          <th >{{keyword.name}}</th>
+          <td>{{keyword.variations.join(", ")}}</td>
+         </tr>
+      </tbody>
+    </table>
