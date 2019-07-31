@@ -1,19 +1,16 @@
 <h1>Keyword List</h1>
 
-
-<div class="row">
-  <table class="col-4 table table-sm">
-      <thead>
-        <tr>
-          <th scope="col">keyword</th>
-          <th scope="col">variations</th>
-        </tr>
-      </thead>
-      <tbody *ngFor="let keyword of allKeywords">
-        <tr>
-          <th >{{keyword.name}}</th>
-          <td>{{keyword.variations.join(", ")}}</td>
-         </tr>
-      </tbody>
-    </table>
-  </div>
+<table class="col-4 table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">keyword</th>
+      <th scope="col">variations</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let keyword of allKeywords">
+    <tr>
+      <th>{{keyword.name}}</th>
+      <td>{{keyword.variations.join(", ")}}</td>
+    </tr>
+  </tbody>
+</table>
