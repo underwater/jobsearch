@@ -12,10 +12,19 @@ export class KeywordsComponent implements OnInit {
 
   ngOnInit() {
     this.keywordService.getKeywords()
-    .then((result) => {
-      this.allKeywords = result;
-      console.table(this.allKeywords);
-    });
+      .then((result) => {
+        this.allKeywords = result;
+        console.table(this.allKeywords);
+      });
   }
 
+  public onDelete(keyword: Keyword): void {
+    this.keywordService.delKeyword(keyword.id);
+  }
+
+  public onEdit(keyword: Keyword): void {
+    this.keywordService.editKeyword(keyword);
+  }
 }
+
+

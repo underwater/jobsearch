@@ -1,16 +1,22 @@
-<h1>Keyword List</h1>
 
-<table class="col-4 table table-sm">
+<div class="row">
+<table class="col-5 table">
   <thead>
     <tr>
-      <th scope="col">keyword</th>
-      <th scope="col">variations</th>
+      <th>keyword</th>
+      <th>variations</th>
     </tr>
   </thead>
   <tbody *ngFor="let keyword of allKeywords">
     <tr>
       <th>{{keyword.name}}</th>
       <td>{{keyword.variations.join(", ")}}</td>
+      <td>
+        <button class="btn btn-success mr-2" (click)="onEdit(keyword)">Edit</button>
+         <button class="btn btn-danger" (click)="onDelete(keyword)">Delete</button>
+      </td>
     </tr>
   </tbody>
-</table>
+
+  </table>
+</div>
