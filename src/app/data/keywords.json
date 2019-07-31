@@ -1,9 +1,26 @@
 {
   "keywords": [
-      { "id": 1, "name": "SQL", "variations": ["TSL", "T-SQL"] },
-      { "id": 2, "name": "WPF", "variations": ["XAML"] },
-      { "id": 3, "name": "C#", "variations": ["CSharp", "C-Sharp"] },
-      { "id": 4, "name": ".NET", "variations": ["dotNet"] },
-      { "id": 5, "name": "ASP.net", "variations": ["ASP MVC"] }
-    ]
+    {
+      "id": 2,
+      "name": "WPF",
+      "variations": [
+        "XAML"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "C#",
+      "variations": [
+        "CSharp",
+        "C-Sharp"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ASP.net",
+      "variations": [
+        "ASP MVC"
+      ]
+    }
+  ]
 }

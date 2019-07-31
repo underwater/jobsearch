@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { KeywordsComponent } from './keywords/keywords.component';
 import { KeywordService } from './services/keyword.service';
+import { EditKeywordComponent } from './keywords/edit-keyword/edit-keyword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    KeywordsComponent
+    KeywordsComponent,
+    EditKeywordComponent
   ],
   imports: [
     BrowserModule,

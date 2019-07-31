@@ -19,6 +19,12 @@ export class KeywordService {
       .toPromise();
   }
 
+  public getKeyword(id: number): Promise<Keyword> {
+    return this.httpClient
+      .get<Keyword>(`${this.apiUrl}/${id}`)
+      .toPromise();
+  }
+
   public addKeyword(keyword: Keyword): void {
 
   }
