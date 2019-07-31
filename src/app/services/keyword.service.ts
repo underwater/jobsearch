@@ -25,7 +25,7 @@ export class KeywordService {
 
   public editKeyword(keyword: Keyword): Promise<any> {
     return this.httpClient
-      .post<Keyword>(this.apiUrl, keyword)
+      .put<Keyword>(this.apiUrl, keyword)
       .toPromise();
   }
 

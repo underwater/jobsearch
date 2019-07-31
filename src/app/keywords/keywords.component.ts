@@ -19,11 +19,13 @@ export class KeywordsComponent implements OnInit {
   }
 
   public onDelete(keyword: Keyword): void {
-    this.keywordService.delKeyword(keyword.id);
+    this.keywordService.delKeyword(keyword.id)
+    .then();
   }
 
   public onEdit(keyword: Keyword): void {
-    this.keywordService.editKeyword(keyword);
+    this.keywordService.editKeyword(keyword)
+    .then();
   }
 }
 
