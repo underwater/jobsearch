@@ -1,0 +1,9 @@
+{
+  "keywords": [
+      { "name": "SQL", "variations": ["TSL", "T-SQL"] },
+      { "name": "WPF", "variations": ["XAML"] },
+      { "name": "C#", "variations": ["CSharp", "C-Sharp"] },
+      { "name": ".NET", "variations": ["dotNet"] },
+      { "name": "ASP.net", "variations": ["ASP MVC"] }
+    ]
+}
