@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KeywordService } from '../services/keyword.service';
 
 @Component({
   selector: 'app-keywords',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KeywordsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private keywordService: KeywordService) { }
+
 
   ngOnInit() {
+    this.keywordService.getKeywords()
+    .then((result) => console.table(result));
   }
 
 }
