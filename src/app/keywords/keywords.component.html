@@ -1,22 +1,19 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>keyword</th>
+            <th>variations</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let keyword of allKeywords">
+        <tr>
+            <th>{{keyword.name}}</th>
+            <td>{{keyword.variations.join(", ")}}</td>
+            <td>
+                <button class="btn btn-success mr-2" (click)="onEdit(keyword)">Edit</button>
+                <button class="btn btn-danger" (click)="onDelete(keyword)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
 
-<div class="row">
-<table class="col-5 table">
-  <thead>
-    <tr>
-      <th>keyword</th>
-      <th>variations</th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let keyword of allKeywords">
-    <tr>
-      <th>{{keyword.name}}</th>
-      <td>{{keyword.variations.join(", ")}}</td>
-      <td>
-        <button class="btn btn-success mr-2" (click)="onEdit(keyword)">Edit</button>
-         <button class="btn btn-danger" (click)="onDelete(keyword)">Delete</button>
-      </td>
-    </tr>
-  </tbody>
-
-  </table>
-</div>
+</table>

@@ -1,1 +1,14 @@
-<p>edit-keyword works!</p>
+<form [formGroup]="form">
+    <div class="form-group row no-gutters">
+        <mat-form-field class=" example-full-width">
+            <input matInput class="form-control" formControlName="id" placeholder="id">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <textarea matInput class="form-control" formControlName="variations" placeholder="variations as comma seperated words"></textarea>
+        </mat-form-field>
+    </div>
+</form>
+<div class="form-group" *ngIf="hasError">
+    <span>Oops something's wrong. Check your input and try again</span>
+</div>
