@@ -1,12 +1,9 @@
 <form [formGroup]="form">
-    <div class="form-group row no-gutters">
-        <mat-form-field class=" example-full-width">
-            <input matInput class="form-control" formControlName="id" placeholder="id">
-        </mat-form-field>
+    <div class="form-group">
+        <input nbInput class="form-control" formControlName="id" placeholder="id">
+        <input nbInput class="form-control" formControlName="name" placeholder="name">
+        <textarea nbInput class="form-control" formControlName="variations" placeholder="variations as comma seperated words"></textarea>
 
-        <mat-form-field class="example-full-width">
-            <textarea matInput class="form-control" formControlName="variations" placeholder="variations as comma seperated words"></textarea>
-        </mat-form-field>
     </div>
 </form>
 <div class="form-group" *ngIf="hasError">

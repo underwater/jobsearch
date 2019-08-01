@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,8 +9,8 @@ import { KeywordsComponent } from './keywords/keywords.component';
 import { KeywordService } from './services/keyword.service';
 import { EditKeywordComponent } from './keywords/edit-keyword/edit-keyword.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MaterialModule } from './shared/material-module';
+import { NbThemeModule, NbInputModule, NbLayoutModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   declarations: [
@@ -25,10 +24,10 @@ import { MaterialModule } from './shared/material-module';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    MaterialModule
-
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbInputModule,
+    NbLayoutModule,
+    NbEvaIconsModule
   ],
   providers: [KeywordService],
   bootstrap: [AppComponent]

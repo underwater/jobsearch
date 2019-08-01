@@ -1,14 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary ">
+<nb-layout>
 
+  <nb-layout-header fixed>
+  <!-- Insert header here -->
+  </nb-layout-header>
 
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link" a [routerLink]="['/welcome']" routerLinkActive="router-link-active">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/keywords']" routerLinkActive="router-link-active">Keywords</a>
-        </li>
+  <nb-layout-column>
 
-    </ul>
-</nav>
-<router-outlet></router-outlet>
+    <nb-layout>
+    
+      <nb-layout-header fixed>
+      <!-- Insert header here -->
+      </nb-layout-header>
+    
+      <nb-layout-column>
+    
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary ">
+        
+        
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" a [routerLink]="['/welcome']" routerLinkActive="router-link-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/keywords']" routerLinkActive="router-link-active">Keywords</a>
+                </li>
+        
+            </ul>
+        </nav>
+        <router-outlet></router-outlet>
+        
+      </nb-layout-column>
+    
+      <nb-layout-footer fixed>
+      <!-- Insert footer here -->
+      </nb-layout-footer>
+    
+    </nb-layout>
+    
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
